@@ -1,0 +1,26 @@
+/* table只弄th和td */
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-style: groove;
+}
+
+th {
+    color: white;
+    border-color: black;
+    border-width: 2px;
+    padding: 5px;
+    background-color: black;
+}
+
+td {
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    padding: 3px;
+}
