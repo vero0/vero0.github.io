@@ -1,0 +1,10 @@
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+.circular--square {
+    width: 150x;
+    height: 130px;
+    border-radius: 50%;
+}
