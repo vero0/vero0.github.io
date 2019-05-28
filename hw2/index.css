@@ -56,8 +56,8 @@ body * {
 }
 
 .logo {
-    max-width: 200px;
-    max-height: 80px;
+    width: 30%;
+    height: 80%
 }
 
 .jumbotron {
@@ -181,7 +181,7 @@ body * {
 }
 
 .navbar {
-    min-height: 80px;
+    height: 10%;
 }
 
 .navbar-brand {
