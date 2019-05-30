@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#page').hide()
 
     var items = null
-    var pageCount = 20
+    var pageCount = 21
     var showItems = (page) => {
         if (items == null) return
         var start = (page - 1) * pageCount
@@ -29,8 +29,8 @@ $(document).ready(function() {
     }
 
     var newPage = (n) => {
-        var pageNum = n / 20
-        pageNum = (n % 20 != 0) ? pageNum + 1 : pageNum
+        var pageNum = n / 21
+        pageNum = (n % 21 != 0) ? pageNum + 1 : pageNum
 
         $('#page-number').empty()
 
@@ -56,8 +56,37 @@ $(document).ready(function() {
         $ra = $('<a>').attr('class', 'page-link').attr('href', '#').text('»')
         $rli = $('<li>').attr('class', 'page-item').append($ra)
         $('#page-number').append($rli)
+
+
+
     }
 
+
+    /*
+    showPage = function(page) {
+        $(".page-item").hide();
+        $(".page-item").each(function(n) {
+            if (n >= pageNum && n < pageNum)
+                $(this).show();
+        });
+    }
+
+    showPage(i);
+
+    $("#previous").click(function() {
+        $("#next").removeClass("page-item");
+        $(this).addClass("current");
+        if (i != 1) {
+            showPage(--i);
+        }
+    });
+    $("#next").click(function() {
+            $("#previous").removeClass("page-item");
+            $(this).addClass("page-item");
+            showPage(++i);
+        }
+    });
+*/
     $('#query').on('click', function() {
         $.get('https://js.kchen.club/B05303072/query', function(response) {
             if (response) {
