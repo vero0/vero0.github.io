@@ -31,7 +31,7 @@ $(document).ready(function() {
     var newPage = (n) => {
         var pageNum = n / 21
         pageNum = (n % 21 != 0) ? pageNum + 1 : pageNum
-
+        var currentPage = 0
         $('#page-number').empty()
 
         $la = $('<a>').attr('class', 'page-link').attr('href', '#').attr('tabindex', '-1').attr('aria-disabled', 'true').text('«')
@@ -46,7 +46,10 @@ $(document).ready(function() {
             $a.on('click', function() {
                 var i = $(this).text()
                 showItems(Number(i))
+                addClass(' active')
+                currentPage = Number(i)
             })
+
 
             var strActive = ((i == 1) ? ' active' : '')
             $li = $('<li>').attr('class', 'page-item' + strActive).append($a)
@@ -57,36 +60,18 @@ $(document).ready(function() {
         $rli = $('<li>').attr('class', 'page-item').append($ra)
         $('#page-number').append($rli)
 
-
+        $rli.on('click', function() {
+            console.log(currentPage)
+            showItems(Number(currentPage + 1))
+            currentPage = currentPage + 1
+        })
+        $lli.on('click', function() {
+            showItems(Number(currentPage - 1))
+            currentPage = currentPage - 1
+        })
 
     }
 
-
-    /*
-    showPage = function(page) {
-        $(".page-item").hide();
-        $(".page-item").each(function(n) {
-            if (n >= pageNum && n < pageNum)
-                $(this).show();
-        });
-    }
-
-    showPage(i);
-
-    $("#previous").click(function() {
-        $("#next").removeClass("page-item");
-        $(this).addClass("current");
-        if (i != 1) {
-            showPage(--i);
-        }
-    });
-    $("#next").click(function() {
-            $("#previous").removeClass("page-item");
-            $(this).addClass("page-item");
-            showPage(++i);
-        }
-    });
-*/
     $('#query').on('click', function() {
         $.get('https://js.kchen.club/B05303072/query', function(response) {
             if (response) {
