@@ -20,4 +20,5 @@ If you click '«', it will take you to the precious page.
 
 To switch over the "查詢" page, simply click "查詢" button which is located beside the "新增" button. It will bring you to the index.html page.
 If you are currently in the "新增" page and you would like to see the product-list's items: 
-1. C
+1. Click the "查詢" button -> you will be redirected to the index.html page
+2. Click the "查詢" button again -> you will see 21 items from page 1
