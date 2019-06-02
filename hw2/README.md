@@ -15,7 +15,7 @@ Each item's image have hover effect too, with box shadow, 3D transformation and 
 (Please direct your cursor towards the products' item (div class="item") and products' image (img class="image") to see the hover effect.
 * Pagination -> click every page number from the pagination bar, you will see 21 items for each page. 
 If you click '»', it will take you to the next page. 
-If you click '«', it will take you to the precious page.
+If you click '«', it will take you to the previous page.
 * If you click "新增" button, you will be taken to the insert.html webpage.
 
 To switch over the "查詢" page, simply click "查詢" button which is located beside the "新增" button. It will bring you to the index.html page.
