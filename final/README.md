@@ -1,4 +1,4 @@
-This game is very popular since I was little. I often play it with my brother. It is still a very fun game that I often play when I feel bored. Luckily, my brother is majoring at Computer Science, and he actually helps me a lot in this project. 
+This game is very popular since I was little. I often play it with my brother. It is still a very fun game that I often play when I feel bored. Luckily, my brother is majoring in Computer Science, and he actually helps me a lot in this project. 
 Navbar part : 
 If you point your cursor to Navbar items such as Home, About Us, Product, Pages, Community, a line will appear below each Navbar item.
 PLAY:
