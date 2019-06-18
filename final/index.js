@@ -3,7 +3,7 @@
 var word = [
     ["Newton", "Person who discover the the universal law of gravity"],
     ["Mathematics", "1+1=2"],
-    ["HTML", "Markup language for creating Web pages."],
+    ["Eat", "When you feel hungry, you ..."],
     ["Iphone", "Device with apple logo"],
     ["Sibling", "Individual(s) with the same parents with you."],
     ["JavaScript", "Make web-page dynamic without reload the web page."],
