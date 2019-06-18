@@ -1,4 +1,5 @@
-This game is very popular since I was little. I often play it with my brother. It is still a very fun game that I often play when I feel bored. Luckily, my brother is majoring in Computer Science, and he actually helps me a lot in this project. 
+這是一個猜一猜首都的遊戲，因為我自己對於各國的首都不受，所以寫了這一個遊戲。
+This game is very popular since I was little. I often play it with my brother. It is still a very fun game that I often play when I feel bored，如果對Javascript熟可以換一換array裡面的vocabulary。
 Navbar part : 
 If you point your cursor to Navbar items such as Home, About Us, Product, Pages, Community, a line will appear below each Navbar item.
 PLAY:
